@@ -1,0 +1,425 @@
+{
+	"id": "b86d9bc0-d9f5-4a56-a3c9-49bb81f77745",
+	"name": "Go Rest API",
+	"timestamp": "2022-06-02T19:37:30.585Z",
+	"collection_id": "17755807-7c516d4c-e9e7-4f12-ae9f-98bfd3dfe89a",
+	"folder_id": 0,
+	"environment_id": "17755807-b3be7100-2770-4d88-9f23-680b34443840",
+	"totalPass": 22,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "6cd45f09-5016-403d-b2c8-5b262a610aae",
+			"name": "Test Case - Create User",
+			"url": "https://gorest.co.in/public/v2//users",
+			"time": 1142,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 2seg": true,
+				"Sucessfull Post Request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2seg": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Sucessfull Post Request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1142
+			],
+			"allTests": [
+				{
+					"Response time is less than 2seg": true,
+					"Sucessfull Post Request": true
+				}
+			]
+		},
+		{
+			"id": "b1f4bf73-49ad-4869-9e9e-146343c83e51",
+			"name": "Test Case - Delete User",
+			"url": "https://gorest.co.in/public/v2//users/4023",
+			"time": 405,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response time is less than 2seg": true,
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2seg": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				405
+			],
+			"allTests": [
+				{
+					"Response time is less than 2seg": true,
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "c335467c-204c-4c1e-b203-af4b6e34023b",
+			"name": "Test Case - Update User",
+			"url": "https://gorest.co.in/public/v2//users/3846",
+			"time": 400,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2seg": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2seg": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				400
+			],
+			"allTests": [
+				{
+					"Response time is less than 2seg": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ede65f08-952f-49a0-b8e5-accab92adb05",
+			"name": "Test Case - Create Post",
+			"url": "https://gorest.co.in/public/v2//posts",
+			"time": 395,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 2seg": true,
+				"Sucessfull Post Request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2seg": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Sucessfull Post Request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				395
+			],
+			"allTests": [
+				{
+					"Response time is less than 2seg": true,
+					"Sucessfull Post Request": true
+				}
+			]
+		},
+		{
+			"id": "89bdf3b0-3b75-428e-8512-1d3395a8ab19",
+			"name": "Test Case - List Post",
+			"url": "https://gorest.co.in/public/v2//posts",
+			"time": 405,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2seg": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2seg": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				405
+			],
+			"allTests": [
+				{
+					"Response time is less than 2seg": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "94feea03-2a22-4ad4-9e63-335acaf5cfe6",
+			"name": "Test Case - List Specific Post",
+			"url": "https://gorest.co.in/public/v2//posts/1917",
+			"time": 390,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2seg": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2seg": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				390
+			],
+			"allTests": [
+				{
+					"Response time is less than 2seg": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8089d175-3ce9-45f6-b754-ac13da18efe3",
+			"name": "Test Case - Delete Post",
+			"url": "https://gorest.co.in/public/v2//posts/1946",
+			"time": 401,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response time is less than 2seg": true,
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2seg": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				401
+			],
+			"allTests": [
+				{
+					"Response time is less than 2seg": true,
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "b440fcb3-3ef1-4ac3-a6d1-2fb2785996b7",
+			"name": "Test Case - List Comment",
+			"url": "https://gorest.co.in/public/v2//comments",
+			"time": 407,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2seg": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2seg": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				407
+			],
+			"allTests": [
+				{
+					"Response time is less than 2seg": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1a848d62-b011-46bf-8488-5fea7003ca03",
+			"name": "Test Case - List Specific Comment",
+			"url": "https://gorest.co.in/public/v2//comments/1892",
+			"time": 397,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2seg": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2seg": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				397
+			],
+			"allTests": [
+				{
+					"Response time is less than 2seg": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2ad9bf6d-ca6c-4981-9ab8-5f0c573b6aa6",
+			"name": "Test Case - Create Comment",
+			"url": "https://gorest.co.in/public/v2//comments",
+			"time": 401,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 2seg": true,
+				"Sucessfull Post Request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2seg": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Sucessfull Post Request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				401
+			],
+			"allTests": [
+				{
+					"Response time is less than 2seg": true,
+					"Sucessfull Post Request": true
+				}
+			]
+		},
+		{
+			"id": "851b57ac-60a1-4ed8-a97c-cd9206f9b35c",
+			"name": "Test Case - Delete Comment",
+			"url": "https://gorest.co.in/public/v2//comments/1947",
+			"time": 399,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response time is less than 2seg": true,
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2seg": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				399
+			],
+			"allTests": [
+				{
+					"Response time is less than 2seg": true,
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5142,
+	"collection": {
+		"requests": [
+			{
+				"id": "6cd45f09-5016-403d-b2c8-5b262a610aae",
+				"method": "POST"
+			},
+			{
+				"id": "b1f4bf73-49ad-4869-9e9e-146343c83e51",
+				"method": "DELETE"
+			},
+			{
+				"id": "c335467c-204c-4c1e-b203-af4b6e34023b",
+				"method": "PATCH"
+			},
+			{
+				"id": "ede65f08-952f-49a0-b8e5-accab92adb05",
+				"method": "POST"
+			},
+			{
+				"id": "89bdf3b0-3b75-428e-8512-1d3395a8ab19",
+				"method": "GET"
+			},
+			{
+				"id": "94feea03-2a22-4ad4-9e63-335acaf5cfe6",
+				"method": "GET"
+			},
+			{
+				"id": "8089d175-3ce9-45f6-b754-ac13da18efe3",
+				"method": "DELETE"
+			},
+			{
+				"id": "b440fcb3-3ef1-4ac3-a6d1-2fb2785996b7",
+				"method": "GET"
+			},
+			{
+				"id": "1a848d62-b011-46bf-8488-5fea7003ca03",
+				"method": "GET"
+			},
+			{
+				"id": "2ad9bf6d-ca6c-4981-9ab8-5f0c573b6aa6",
+				"method": "POST"
+			},
+			{
+				"id": "851b57ac-60a1-4ed8-a97c-cd9206f9b35c",
+				"method": "DELETE"
+			}
+		]
+	}
+}
