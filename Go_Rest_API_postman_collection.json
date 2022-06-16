@@ -1,0 +1,436 @@
+{
+	"info": {
+		"_postman_id": "7c516d4c-e9e7-4f12-ae9f-98bfd3dfe89a",
+		"name": "Go Rest API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17755807"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create users",
+					"item": [
+						{
+							"name": "Test Case - Create User",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"pm.iterationData.get(\"first_name_user\")\r",
+											"pm.iterationData.get(\"last_name_user\")\r",
+											"pm.iterationData.get(\"gender_user\")\r",
+											"pm.iterationData.get(\"email_user\")\r",
+											"pm.iterationData.get(\"status_user\")"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"{{first_name_user}}\",\r\n    \"email\": \"{{email_user}}\",\r\n    \"gender\": \"{{gender_user}}\",\r\n    \"status\": \"{{status_user}}\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_base}}/users",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"users"
+									]
+								},
+								"description": "**Description:**  \nTest Case to create an user in Users resource.\n\n**Expected Results:**\n\n*   Response code 200,201 ou 204\n*   Response time less than 200ms"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Delete users",
+					"item": [
+						{
+							"name": "Test Case - Delete User",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/users/{{id_user_delete}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"users",
+										"{{id_user_delete}}"
+									]
+								},
+								"description": "**Description:**  \nTest Case to delete an user in Users resource.\n\n**Expected Results:**\n\n*   Response code 200,201 ou 204\n*   Response time less than 200ms"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Update users",
+					"item": [
+						{
+							"name": "Test Case - Update User",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Amyle Doravanuil\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_base}}/users/{{id_user_update}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"users",
+										"{{id_user_update}}"
+									]
+								},
+								"description": "**Description:**  \nTest Case to update an user in Users resource.\n\n**Expected Results:**\n\n*   Response code 200,201 ou 204\n*   Response time less than 200ms"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "List users",
+					"item": [
+						{
+							"name": "Test Case - List All Users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/users/",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"users",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "Create Posts",
+					"item": [
+						{
+							"name": "Test Case - Create Post",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_id\": 2618,\r\n    \"title\": \"Blablablabla balala\",\r\n    \"body\": \"Lorem Ipsumll is simplyi dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text every since the 1500s, when an unknownmmmi\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_base}}/posts",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"posts"
+									]
+								},
+								"description": "**Description:**  \nTest Case to create a post in Post resource.\n\n**Expected Results:**\n\n*   Response code 200,201 ou 204\n*   Response time less than 200ms"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Search Post",
+					"item": [
+						{
+							"name": "Test Case - List Post",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/posts",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"posts"
+									]
+								},
+								"description": "**Description:**  \nTest Case to list all posts in Post resource.\n\n**Expected Results:**\n\n*   Response code 200,201 ou 204\n*   Response time less than 200ms"
+							},
+							"response": []
+						},
+						{
+							"name": "Test Case - List Specific Post",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/posts/{{id_post}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"posts",
+										"{{id_post}}"
+									]
+								},
+								"description": "StartFragment\n\n**Description:**  \nTest Case to list a specific post in Post resource.\n\n**Expected Results:**\n\n*   Response code 200,201 ou 204\n*   Response time less than 200ms\n    \n\nEndFragment"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Delete Post",
+					"item": [
+						{
+							"name": "Test Case - Delete Post",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/posts/{{id_post_delete}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"posts",
+										"{{id_post_delete}}"
+									]
+								},
+								"description": "StartFragment\n\n**Description:**  \nTest Case to delete a post in Post resource.\n\n**Expected Results:**\n\n*   Response code 200,201 ou 204\n*   Response time less than 200ms\n    \n\nEndFragment"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Search Comment",
+					"item": [
+						{
+							"name": "Test Case - List Comment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/comments",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"comments"
+									]
+								},
+								"description": "StartFragment\n\n**Description:**  \nTest Case to list all comments in Comment resource.\n\n**Expected Results:**\n\n*   Response code 200,201 ou 204\n*   Response time less than 200ms\n    \n\nEndFragment"
+							},
+							"response": []
+						},
+						{
+							"name": "Test Case - List Specific Comment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/comments/{{id_comment}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"comments",
+										"{{id_comment}}"
+									]
+								},
+								"description": "StartFragment\n\n**Description:**  \nTest Case to list an specific comment in Comment resource.\n\n**Expected Results:**\n\n*   Response code 200,201 ou 204\n*   Response time less than 200ms\n    \n\nEndFragment"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Create Comment",
+					"item": [
+						{
+							"name": "Test Case - Create Comment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"post_id\": 1297,\r\n    \"name\": \"Blabla Blablalula\",\r\n    \"email\": \"blablablalula@gmail.com\",\r\n    \"body\": \"Lorem ipsum dolor siti ametll, consectetur adipiscing elit, sed do eiusmod tempor incididuntmmmii.\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_base}}/comments",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"comments"
+									]
+								},
+								"description": "StartFragment\n\n**Description:**  \nTest Case to create a comment in Comment resource.\n\n**Expected Results:**\n\n*   Response code 200,201 ou 204\n*   Response time less than 200ms\n    \n\nEndFragment"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Delete Comment",
+					"item": [
+						{
+							"name": "Test Case - Delete Comment",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url_base}}/comments/{{id_comment_delete}}",
+									"host": [
+										"{{url_base}}"
+									],
+									"path": [
+										"comments",
+										"{{id_comment_delete}}"
+									]
+								},
+								"description": "StartFragment\n\n**Description:**  \nTest Case to delete a comment in Comment resource.\n\n**Expected Results:**\n\n*   Response code 200,201 ou 204\n*   Response time less than 200ms\n    \n\nEndFragment"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "f43056a9f44dbe457d5065de0cdc179ee4a0b5bcb3a68c466d90bbe8a52bd871",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"console.log(pm.info.requestName);"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"Response time is less than 2seg\", function () {",
+					"    pm.expect(pm.response.responseTime).to.be.below(2000);",
+					"});",
+					"",
+					"if (pm.request.method == \"POST\"){",
+					"    pm.test(\"Sucessfull Post Request\", function () {",
+					"    pm.expect(pm.response.code).to.be.oneOf([200,201,202]);",
+					"});",
+					"}",
+					"",
+					"else if (pm.request.method == \"DELETE\"){",
+					"    pm.test(\"Status code is 204\", function () {",
+					"    pm.response.to.have.status(204);",
+					"});",
+					"}",
+					"",
+					"else(",
+					"      pm.test(\"Status code is 200\", function () {",
+					"    pm.response.to.have.status(200)",
+					"}))",
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id_user_delete",
+			"value": "3838",
+			"type": "string"
+		},
+		{
+			"key": "id_post",
+			"value": "1917",
+			"type": "string"
+		},
+		{
+			"key": "id_post_delete",
+			"value": "1891",
+			"type": "string"
+		},
+		{
+			"key": "id_comment",
+			"value": "1892",
+			"type": "string"
+		},
+		{
+			"key": "id_comment_delete",
+			"value": "1890",
+			"type": "string"
+		},
+		{
+			"key": "id_user_update",
+			"value": "3846",
+			"type": "string"
+		}
+	]
+}

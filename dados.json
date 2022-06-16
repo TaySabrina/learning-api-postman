@@ -1,0 +1,21 @@
+[
+	{
+	"first_name_user": "beth",
+	"email_user":"beth@gmail.com",
+	"gender_user": "female",
+	"status_user":"active"
+	},
+	{
+	"first_name_user": "joao",
+	"email_user":"joao@gmail.com",
+	"gender_user": "male",
+	"status_user":"inactive"
+	},
+	{
+	"first_name_user": "laura",
+	"email_user":"laura_silva@gmail.com",
+	"gender_user": "female",
+	"status_user":"active"
+	}
+]
+	
