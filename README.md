@@ -7,7 +7,7 @@
 <ul>
   <li>Resources: User, Post and Comment.</li>
 
-  <li>Methods: Get, Post, Putch and Delete.</li>
+  <li>Methods: Get, Post, Put, Patch and Delete.</li>
 </ul>
 
 <bloquote> *This exercise was create to improve my API tests skills.* </bloquote>
